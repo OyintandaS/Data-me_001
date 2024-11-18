@@ -6,7 +6,9 @@ def reverse_list(lst):
     :param lst: List of integers.
     :return: A list with elements in reverse order.
     """
-    pass  # Implement this
+    lst = [3, 2, 1]  # Implement this
+    lst[1:1:-1]
+    return lst
 
 def count_occurrences(lst, element):
     """
@@ -15,7 +17,12 @@ def count_occurrences(lst, element):
     :param element: Element to count.
     :return: Integer count of occurrences.
     """
-    pass  # Implement this
+    element = 0
+    lst = ["There were so many ducks at the ducks show"]
+    for i in lst:
+        if i == "ducks":
+            element += 1
+        return element
 
 def get_keys_with_value(dct, value):
     """
@@ -24,7 +31,13 @@ def get_keys_with_value(dct, value):
     :param value: Value to find.
     :return: List of keys.
     """
-    pass  # Implement this
+    dct = {"a":1,
+           "b":2,
+           "c":3
+           
+        }  # Implement this
+    for key, value in dct:
+        return key
 
 def merge_sorted_lists(lst1, lst2):
     """
@@ -33,7 +46,9 @@ def merge_sorted_lists(lst1, lst2):
     :param lst2: Second sorted list.
     :return: Merged sorted list.
     """
-    pass  # Implement this
+lst1 = [1, 2, 3] # Implement this
+lst2 = [4, 5, ]
+lst1.merge(lst2) 
 
 def find_second_largest(numbers):
     """
@@ -55,7 +70,13 @@ def is_anagram(str1, str2):
     :param str2: Second string.
     :return: True if the strings are anagrams, False otherwise.
     """
-    pass  # Implement this
+    str1 = "listen"  # Implement this
+    str2 = "silent"
+    for i in str1:
+        if i in str2:
+            return True
+        else:
+            False
 
 
 def flatten_list(nested_list):
@@ -73,7 +94,12 @@ def remove_duplicates(lst):
     :param lst: List of elements.
     :return: List without duplicates.
     """
-    pass  # Implement this
+    lst = [1, 2, 3, 1, 1, 6, 7, 8, 9, 1, 1] # Implement this
+    j = 1
+    for i in lst:
+        if j == i:
+            j.remove(j)
+        return lst
 
 def find_common_elements(lst1, lst2):
     """
